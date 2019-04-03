@@ -6,15 +6,13 @@
           size="small"
           @click="handleOperate(scope.row, 'onDefaultView')"
           type="primary"
+          >查看</el-button
         >
-          查看
-        </el-button>
         <el-button
           size="small"
           @click="handleOperate(scope.row, 'onDefaultEdit')"
+          >编辑</el-button
         >
-          编辑
-        </el-button>
         <el-button size="small" @click="handleOperate(scope.row, 'onOroff')">
           {{ scope.row.status === 'on' ? '下架' : '上架' }}
         </el-button>
