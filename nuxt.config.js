@@ -15,7 +15,9 @@ const config = {
   env: {
     mock: {
       '/deepexi-tenant': mockServer,
-      '/deepexi-permission': mockServer
+      '/deepexi-permission': mockServer,
+      '/api': 'http://yapi.demo.qunar.com/mock/66801' // delete、put接口存在403问题
+      // '/api': 'http://127.0.0.1:3001/mock/11' // Yapi本地部署，解决delete、put接口403问题
     },
     dev: {
       '/deepexi-tenant': apiServer,
